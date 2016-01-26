@@ -1,0 +1,223 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  background-color: #eee;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  color: #666;
+  font-size: 24px;
+  padding: 30px 50px;
+}
+
+p.about {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p.service {
+  padding: 10px 30px;
+}
+
+li { list-style: none; }
+
+.one p {
+  color: #666;
+  text-align: justify;
+}
+
+a#touchnmr {
+  color: #666;
+}
+
+.header {
+  background: #3686be;
+  padding-bottom: 20px;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sub {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.introduction {
+  background: #3686be;
+  padding: 40px 30px 40px 30px;
+}
+
+.chooser {
+  background: #3686be;
+  padding: 40px 30px 40px 30px;
+}
+
+.chooser ul {
+  font-size: 26px;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.chooser li.inactive { opacity: 0.5; }
+.chooser li.inactive:hover {
+  cursor: pointer;
+  opacity: 1.0; 
+}
+
+.lead {
+  color: #fff;
+}
+
+.touchnmr { padding: 40px 30px; }
+.about { padding: 40px 30px; }
+.website { padding: 40px 30px; }
+.mobile { 
+  background: #fff;
+  padding: 40px 30px; 
+}
+
+.footer {
+  background: #2e3333;
+  padding: 40px 30px 40px 30px;
+}
+
+.none {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+li.footer-item {
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 53px;
+}
+
+h1.none {
+  color: #666;
+  font-size: 80px;
+  letter-spacing: 6px;
+}
+
+h2 {
+  color: #454545;
+  font-weight: 100;
+  font-size: 36px;
+}
+
+h3 {
+  color: #666;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+h5 { 
+  font-size: 20px; 
+  padding-bottom: 20px;
+}
+
+a.dotted { 
+  border-bottom: 2px dotted; 
+}
+
+a.page:hover { text-decoration: underline; }
+
+img.touchnmr { max-width: 85%; }
+img.about { max-width: 90%; }
+
+/* for products page */
+.mine,
+.custom {
+  padding: 0;
+  margin: 0;
+}
+
+div.content p {
+  text-align: justify;
+}
+
+li.product img{
+  margin: 25px 30px;
+  width: 150px;
+  height: 150px;
+}
+
+li#mid.product {
+  background: #fff;
+}
+
+div.content a {
+  color: #666;
+  background: url("../images/apple.png") no-repeat;
+  padding: 8px 0 8px 30px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    text-align: left;
+    padding-left: 50px;
+  }
+  .sub {
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  li.product { min-height: 200px; }
+
+  li.product img{
+    margin: 25px 30px;
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+
+  div.content {
+    text-align: left;
+    padding: 8px 30px 0 210px;
+  }
+
+  div.content h2 { font-size: 28px; }
+
+  div.content p {
+    color: #666;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0;
+    line-height: 1.1;
+  }
+
+  div.content a {
+    float: right;
+  }
+}
