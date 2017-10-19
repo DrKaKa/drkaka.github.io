@@ -1,8 +1,9 @@
 # Site Settings
 locale: "en-US"
 
-title: Dr. KaKa
+title: Dr. Kaka
 title_separator: "-"
+og_image: "card.jpg"
 author: 
   - "Dr. Kaka"
 email: drkaka@drkaka.com
