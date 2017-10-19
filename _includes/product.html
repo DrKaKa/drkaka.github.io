@@ -1,0 +1,33 @@
+{% assign idx = '1' %}
+<section class="hero mine">
+{% for product in page.mine %}
+
+{% if idx == '1' %}
+<section class="hero">
+{% assign idx = '2' %}
+{% else %}
+<section class="hero is-light"> 
+{% assign idx = '1' %}
+{% endif %}
+
+{% include product_content.html product=product %}
+</section>
+{% endfor %}
+</section>
+
+{% assign idx = '1' %}
+<section class="hero custom">
+{% for product in page.custom %}
+
+{% if idx == '1' %}
+<section class="hero">
+{% assign idx = '2' %}
+{% else %}
+<section class="hero is-light"> 
+{% assign idx = '1' %}
+{% endif %}
+
+{% include product_content.html product=product %}
+</section>
+{% endfor %}
+</section>

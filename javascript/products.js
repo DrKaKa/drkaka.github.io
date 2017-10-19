@@ -1,26 +1,27 @@
 $(document).ready(function() {
-
-	$("li#mine").click(function() {
+	$("section.custom").hide();
+	
+	$("p#mine").click(function() {
 		if ($(this).hasClass('inactive')) {
 			$(this).removeClass('inactive');
-			$("li#custom").addClass('inactive');
+			$("p#custom").addClass('inactive');
 
-			$("ul.custom").animate({ opacity: 0.0}, 500);
-			$("ul.custom").hide();
-			$("ul.mine").show();
-			$("ul.mine").animate({ opacity: 1.0}, 500);
+			$("section.custom").animate({ opacity: 0.0}, 500);
+			$("section.custom").hide();
+			$("section.mine").show();
+			$("section.mine").animate({ opacity: 1.0}, 500);
 		}
 	});
 
-	$("li#custom").click(function() {
+	$("p#custom").click(function() {
 		if ($(this).hasClass('inactive')) {
 			$(this).removeClass('inactive');
-			$("li#mine").addClass('inactive');
+			$("p#mine").addClass('inactive');
 
-			$("ul.mine").animate({ opacity: 0.0}, 500);
-			$("ul.mine").hide();
-			$("ul.custom").show();
-			$("ul.custom").animate({ opacity: 1.0}, 500);
+			$("section.mine").animate({ opacity: 0.0}, 500);
+			$("section.mine").hide();
+			$("section.custom").show();
+			$("section.custom").animate({ opacity: 1.0}, 500);
 		}
 	});  
 });

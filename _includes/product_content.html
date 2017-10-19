@@ -1,0 +1,32 @@
+<div class="hero-body">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-narrow has-text-centered">
+                <figure class="image is-1by1 thumbnail">
+                    <img src={{ product.thumbnail }} />
+                </figure>
+            </div>
+            <div class="column">
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p class="subtitle is-3">{{ product.name }}</p>
+                        </div>
+                    </div>
+                    {% if product.itunes %}
+                    <div class="level-right">
+                        <div class="level-item">
+                            <a href={{ product.itunes }} target="_blank">
+                                <img class="itunes" src="/images/apple.png"/> <strong class="itunes">View in iTunes</strong>                       
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </nav>
+                <p class="subtitle is-5 introduction">
+                    {{ product.introduction }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+# Site Settings
+locale: "en-US"
+
+title: Dr. KaKa
+title_separator: "-"
+author: 
+  - "Dr. Kaka"
+email: drkaka@drkaka.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Dr. Kaka focuses on developing applications in the professional way and 
+  is especially good at iOS and server side development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.drkaka.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter:
+  username: drkakaapps
+
+facebook:
+  publisher: "https://www.facebook.com/freeleestyle"
+
+social:
+  name: Dr. Kaka
+  links:
+    - https://twitter.com/drkakaapps
+    - https://www.facebook.com/apisfun
+    - https://github.com/drkaka
+    - https://drkaka.slack.com
+    - https://www.linkedin.com/in/dr-kaka
+
+google_site_verification: "PRkYvM4DfYP_LCq5oSabZvJEOuS8KZc72QASttKlo2M"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - README.md
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

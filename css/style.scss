@@ -1,0 +1,57 @@
+---
+# For jekyll
+---
+
+$info: rgb(54, 134, 190);
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/base/_all";
+// @import "bulma/sass/utilities/initial-variables" 
+
+@import "bulma/sass/elements/container";
+@import "bulma/sass/elements/title";
+@import "bulma/sass/grid/columns";
+@import "bulma/sass/layout/hero";
+
+$footer-background-color: rgb(46, 51, 51);
+@import "bulma/sass/layout/footer";
+@import "bulma/sass/layout/section";
+@import "bulma/sass/components/level";
+
+a.dotted {
+    border-bottom: 2px dotted
+}
+
+img.itunes {
+    vertical-align: -5px
+}
+
+strong.itunes {
+    color: rgb(106, 118, 124);
+    font-weight: 800
+}
+.hero.is-light strong.itunes {
+    color: rgb(106, 118, 124);
+    font-weight: 800
+}
+
+.block {
+    margin-top: 3rem;
+    margin-bottom: 3rem
+}
+
+figure.thumbnail {
+    margin: 0.5rem
+}
+
+p.introduction {
+    text-align: justify
+}
+
+p.inactive {
+    opacity: 0.5;
+}
+
+p.inactive:hover {
+    cursor: pointer;
+    opacity: 1.0; 
+}
